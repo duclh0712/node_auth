@@ -1,4 +1,3 @@
-const { multipleMongooseToObject, mongooseToObject } = require("../utils");
 const Members = require("../models/Members");
 
 const sessions = {};
@@ -70,7 +69,7 @@ class HomeController {
 
     member
       .save()
-      .then(() => res.redirect("/login", {layout: "form_layout"}))
+      .then(() => res.redirect("/login"))
       .catch(next);
   }
 
