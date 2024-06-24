@@ -70,7 +70,7 @@ class HomeController {
 
     member
       .save()
-      .then(() => res.redirect("/login"))
+      .then(() => res.redirect("/login", {layout: "form_layout"}))
       .catch(next);
   }
 

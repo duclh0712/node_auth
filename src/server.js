@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3009;
+const PORT = 3009;
 
 // routes
 const route = require('./routes')
@@ -30,6 +30,6 @@ route(app);
 
 
 
-app.listen(port, () => {
-  console.log(`Server running at ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running at ${PORT}`);
 });
